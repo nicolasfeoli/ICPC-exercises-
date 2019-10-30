@@ -1,0 +1,244 @@
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{cin.tie(0);
+ios_base::sync_with_stdio(0);
+
+	double suma = 0;
+	double temp;
+	for(int i = 0; i < 12; i++)
+	{
+		cin >> temp;
+		suma += temp;
+	}
+	
+	cout << suma / 12
+	return 0;
+}
+
+
+1494
+1023
+1156
+1805
+1102
+
+1099x
+1312x
+1306<<<<<<<<<<<<<<<<<<
+1318x
+1288
+1046
+1493
+2413
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int T;
+	string N;
+	cin >> T;
+	while(T > 0)
+	{
+		cin >> N;
+		N = N.substr(N.size()-3);
+		cout << N <<'\n';
+		T--;
+	}
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	int A, B, C, tmpA, tmpB, tmpC;
+	cin >> tmpA >> tmpB >> tmpC;
+	if (tmpA < tmpB && tmpA < tmpC)
+	{
+		A = tmpA;
+		if(tmpB < tmpC)
+		{
+			B = tmpB;
+			C = tmpC;
+		}else
+		{
+			B = tmpC;
+			C = tmpB;
+		}
+	}else if (tmpB < tmpA && tmpB < tmpC)
+	{
+		A = tmpB;
+		if(tmpA < tmpC)
+		{
+			B = tmpA;
+			C = tmpC;
+		}else
+		{
+			B = tmpC;
+			C = tmpA;
+		}
+	}else if (tmpC < tmpA && tmpC < tmpB)
+	{
+		A = tmpC;
+		if(tmpB < tmpA)
+		{
+			B = tmpB;
+			C = tmpA;
+		}else
+		{
+			B = tmpA;
+			C = tmpB;
+		}
+	}
+ 
+	cout << A << B << C;
+	return 0;
+}
+
+#include <string>
+using namespace std;
+
+int main() {
+	int A, B, C, tmpA, tmpB, tmpC;
+	string orden;
+	cin >> tmpA >> tmpB >> tmpC;
+	if (tmpA < tmpB && tmpA < tmpC)
+	{
+		A = tmpA;
+		if(tmpB < tmpC)
+		{
+			B = tmpB;
+			C = tmpC;
+		}else
+		{
+			B = tmpC;
+			C = tmpB;
+		}
+	}else if (tmpB < tmpA && tmpB < tmpC)
+	{
+		A = tmpB;
+		if(tmpA < tmpC)
+		{
+			B = tmpA;
+			C = tmpC;
+		}else
+		{
+			B = tmpC;
+			C = tmpA;
+		}
+	}else if (tmpC < tmpA && tmpC < tmpB)
+	{
+		A = tmpC;
+		if(tmpB < tmpA)
+		{
+			B = tmpB;
+			C = tmpA;
+		}else
+		{
+			B = tmpA;
+			C = tmpB;
+		}
+	}
+	cin >> orden;
+	for(int i = 0; i < 3; i++)
+	{
+		if(orden[i] == 'A') cout << A;
+		else if(orden[i] == 'B') cout << B;
+		else if(orden[i] == 'C') cout << C;
+	}
+	//cout << A << B << C;
+	return 0;
+}
+
+
+cout << fixed << setprecision(2) << r
+
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() 
+{cin.tie(0);
+ios_base::sync_with_stdio(0);
+	int ya = 1;
+	int i,j,k,l;
+	string tira;
+	int matriz[8][8];
+	for(i = 0; i < 8; i++)
+	{
+		ya--;
+		cin<< tira;
+		for(j = 0; j < 8; j++)
+		{
+			if(tira[j] == '*')
+			{
+				if(ya)
+				{
+					cout << "invalid\n";
+					return;
+				}
+				matriz[i][j] = 1;
+				ya++;
+			}else matriz[i][j] = 0;
+		}
+	}
+	
+	for(j = 0; j < 8; j++)
+	{
+		ya = 0;
+		for(i = 0; i < 8; i++)
+		{
+			if(matriz[i][j])
+			{
+				if(ya)
+				{
+					cout << "invalid\n";
+					return;
+				}else{
+					k = i;
+					l = j;
+					while(1)
+					{
+						if(k == 0 || l == 0) break;
+						if(matriz[--k][--l])
+						{
+							cout << "invalid\n";
+							return;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	cout << "valid\n";
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+2936
+2616
+2642
+3285
+2621
+3007

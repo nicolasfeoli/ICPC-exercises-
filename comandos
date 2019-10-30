@@ -1,0 +1,27 @@
+Formula para la permutaciones y grupos:
+	
+	
+Binomio de Newton -> Programacion dinamica
+
+Criba de Eratostenes -> numeros primos
+
+Formulas geometricas
+
+En c++: +como hacer un string, concatenar un string
+		+Matrices en c++
+	    +Maximo comun divisor, minimo comun multiplo
+	    +Fibonacci
+	    +Formulas de las series
+	    +Propiedades de logaritmos
+		+programar una busqueda binaria
+		+Precision
+		+Usar \n en vez de endl
+		+Tabla ASCII
+		+Formulas de divisibilidad
+		+Array sort........
+		+getline
+		
+		
+nano t1
+g++ -std=c++11 respuesta.cpp -o run && ./run < t1
+
